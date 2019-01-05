@@ -1,0 +1,82 @@
+body {
+  margin-top: 1%;
+  font-family: 'Roboto-Mono', monospace;
+  background-color: #83D0C9;
+}
+
+.toolTimer {
+  margin: 0 auto;
+  width: 300px;
+  h1 {
+    height: 60px;
+    width: 400px;
+    margin: auto;
+  }
+}
+
+.tools {
+  margin: auto;
+  font-size: 14px;
+  height: 90px;
+  text-align: center;
+  .but {
+    background-color: #F0F8FF;
+    border-radius: 5px;
+    border: 1px solid #787C7F;
+    width: 25px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.timer {
+  margin: -50px auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    width: 300px;
+  }
+  .sessionName {
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    width: 300px;
+    text-transform: uppercase;
+  }
+  #time {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    font-size: 20px;
+  }
+}
+
+.disable {
+  pointer-events: none;
+}
+
+.animate {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

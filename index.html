@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock  </title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+  <div class= "toolTimer">
+    <h1>POMODORO CLOCK</h1>
+    
+    <div class="tools row">
+      <div class="break col col-offset-1">
+        <div>Break Length</div>
+        <button type="button" class="minB but">&#45;</button>
+        <span class="breakLen">5</span>
+        <button type="button" class="plusB but">&#43;</button>
+      </div>
+      
+      <div class="session col">
+          <div>Session Length</div>
+          <button type="button" class="minS but">&#45;</button>
+        <span class="sessionLen">25</span>
+        <button type="button" class="plusS but">&#43;</button>
+      </div>
+    </div>
+    
+    <div class="timer">
+      <img src ="http://www.pngmart.com/files/5/Eggs-PNG-Transparent-Image.png" alt = "egg">
+      <h2 class='sessionName'>SESSION</h2>
+      <div id="time">25:00</div>
+    </div> 
+    
+    <audio id="audio">
+      <source src='http://www.gravomaster.com/alarm/sounds/chime-high.mp3' type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+  </div>
+</body>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
