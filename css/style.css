@@ -1,5 +1,5 @@
 body {
-  margin-top: 1%;
+  margin-top: calc((100vh - 480px)/3);
   font-family: 'Roboto-Mono', monospace;
   background-color: #83D0C9;
 }
